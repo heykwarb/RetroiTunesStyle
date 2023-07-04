@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF8937F129CFFF4400B565E2 /* RetroiTunesStyleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8937F029CFFF4400B565E2 /* RetroiTunesStyleApp.swift */; };
+		CF8937F329CFFF4400B565E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8937F229CFFF4400B565E2 /* ContentView.swift */; };
+		CF8937F529CFFF4800B565E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8937F429CFFF4800B565E2 /* Assets.xcassets */; };
+		CF8937F829CFFF4800B565E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8937F729CFFF4800B565E2 /* Preview Assets.xcassets */; };
+		CF89380229CFFF4800B565E2 /* RetroiTunesStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89380129CFFF4800B565E2 /* RetroiTunesStyleTests.swift */; };
+		CF89380C29CFFF4800B565E2 /* RetroiTunesStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89380B29CFFF4800B565E2 /* RetroiTunesStyleUITests.swift */; };
+		CF89380E29CFFF4800B565E2 /* RetroiTunesStyleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89380D29CFFF4800B565E2 /* RetroiTunesStyleUITestsLaunchTests.swift */; };
+		CF89382129CFFF6300B565E2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF89382029CFFF6300B565E2 /* WidgetKit.framework */; };
+		CF89382329CFFF6300B565E2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF89382229CFFF6300B565E2 /* SwiftUI.framework */; };
+		CF89382629CFFF6300B565E2 /* widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89382529CFFF6300B565E2 /* widgetBundle.swift */; };
+		CF89382829CFFF6300B565E2 /* widgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89382729CFFF6300B565E2 /* widgetLiveActivity.swift */; };
+		CF89382A29CFFF6300B565E2 /* widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89382929CFFF6300B565E2 /* widget.swift */; };
+		CF89382D29CFFF6600B565E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF89382C29CFFF6600B565E2 /* Assets.xcassets */; };
+		CF89382F29CFFF6600B565E2 /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF89382B29CFFF6300B565E2 /* widget.intentdefinition */; };
+		CF89383029CFFF6600B565E2 /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF89382B29CFFF6300B565E2 /* widget.intentdefinition */; };
+		CF89383329CFFF6600B565E2 /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CF89381E29CFFF6300B565E2 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF89383929D001C300B565E2 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89383829D001C300B565E2 /* ColorExtension.swift */; };
+		CF89383A29D001F200B565E2 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89383829D001C300B565E2 /* ColorExtension.swift */; };
+		CF96614C29E71575003B1F1F /* Baskerville.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CF96614B29E71567003B1F1F /* Baskerville.ttc */; };
+		CF96614D29E71576003B1F1F /* Baskerville.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CF96614B29E71567003B1F1F /* Baskerville.ttc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF8937FE29CFFF4800B565E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8937E529CFFF4300B565E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8937EC29CFFF4400B565E2;
+			remoteInfo = RetroiTunesStyle;
+		};
+		CF89380829CFFF4800B565E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8937E529CFFF4300B565E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8937EC29CFFF4400B565E2;
+			remoteInfo = RetroiTunesStyle;
+		};
+		CF89383129CFFF6600B565E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8937E529CFFF4300B565E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF89381D29CFFF6300B565E2;
+			remoteInfo = widgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF89383729CFFF6600B565E2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF89383329CFFF6600B565E2 /* widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF8937ED29CFFF4400B565E2 /* RetroiTunesStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroiTunesStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8937F029CFFF4400B565E2 /* RetroiTunesStyleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroiTunesStyleApp.swift; sourceTree = "<group>"; };
+		CF8937F229CFFF4400B565E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF8937F429CFFF4800B565E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF8937F729CFFF4800B565E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF8937FD29CFFF4800B565E2 /* RetroiTunesStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroiTunesStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF89380129CFFF4800B565E2 /* RetroiTunesStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroiTunesStyleTests.swift; sourceTree = "<group>"; };
+		CF89380729CFFF4800B565E2 /* RetroiTunesStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroiTunesStyleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF89380B29CFFF4800B565E2 /* RetroiTunesStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroiTunesStyleUITests.swift; sourceTree = "<group>"; };
+		CF89380D29CFFF4800B565E2 /* RetroiTunesStyleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroiTunesStyleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF89381E29CFFF6300B565E2 /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF89382029CFFF6300B565E2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CF89382229CFFF6300B565E2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CF89382529CFFF6300B565E2 /* widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetBundle.swift; sourceTree = "<group>"; };
+		CF89382729CFFF6300B565E2 /* widgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetLiveActivity.swift; sourceTree = "<group>"; };
+		CF89382929CFFF6300B565E2 /* widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widget.swift; sourceTree = "<group>"; };
+		CF89382B29CFFF6300B565E2 /* widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widget.intentdefinition; sourceTree = "<group>"; };
+		CF89382C29CFFF6600B565E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF89382E29CFFF6600B565E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF89383829D001C300B565E2 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		CF96614B29E71567003B1F1F /* Baskerville.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Baskerville.ttc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF8937EA29CFFF4400B565E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8937FA29CFFF4800B565E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF89380429CFFF4800B565E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF89381B29CFFF6300B565E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF89382329CFFF6300B565E2 /* SwiftUI.framework in Frameworks */,
+				CF89382129CFFF6300B565E2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF8937E429CFFF4300B565E2 = {
+			isa = PBXGroup;
+			children = (
+				CF8937EF29CFFF4400B565E2 /* RetroiTunesStyle */,
+				CF89380029CFFF4800B565E2 /* RetroiTunesStyleTests */,
+				CF89380A29CFFF4800B565E2 /* RetroiTunesStyleUITests */,
+				CF89382429CFFF6300B565E2 /* widget */,
+				CF89381F29CFFF6300B565E2 /* Frameworks */,
+				CF8937EE29CFFF4400B565E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8937EE29CFFF4400B565E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF8937ED29CFFF4400B565E2 /* RetroiTunesStyle.app */,
+				CF8937FD29CFFF4800B565E2 /* RetroiTunesStyleTests.xctest */,
+				CF89380729CFFF4800B565E2 /* RetroiTunesStyleUITests.xctest */,
+				CF89381E29CFFF6300B565E2 /* widgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF8937EF29CFFF4400B565E2 /* RetroiTunesStyle */ = {
+			isa = PBXGroup;
+			children = (
+				CF8937F029CFFF4400B565E2 /* RetroiTunesStyleApp.swift */,
+				CF8937F229CFFF4400B565E2 /* ContentView.swift */,
+				CF8937F429CFFF4800B565E2 /* Assets.xcassets */,
+				CF96614B29E71567003B1F1F /* Baskerville.ttc */,
+				CF8937F629CFFF4800B565E2 /* Preview Content */,
+				CF89383829D001C300B565E2 /* ColorExtension.swift */,
+			);
+			path = RetroiTunesStyle;
+			sourceTree = "<group>";
+		};
+		CF8937F629CFFF4800B565E2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF8937F729CFFF4800B565E2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF89380029CFFF4800B565E2 /* RetroiTunesStyleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF89380129CFFF4800B565E2 /* RetroiTunesStyleTests.swift */,
+			);
+			path = RetroiTunesStyleTests;
+			sourceTree = "<group>";
+		};
+		CF89380A29CFFF4800B565E2 /* RetroiTunesStyleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF89380B29CFFF4800B565E2 /* RetroiTunesStyleUITests.swift */,
+				CF89380D29CFFF4800B565E2 /* RetroiTunesStyleUITestsLaunchTests.swift */,
+			);
+			path = RetroiTunesStyleUITests;
+			sourceTree = "<group>";
+		};
+		CF89381F29CFFF6300B565E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF89382029CFFF6300B565E2 /* WidgetKit.framework */,
+				CF89382229CFFF6300B565E2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF89382429CFFF6300B565E2 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				CF89382529CFFF6300B565E2 /* widgetBundle.swift */,
+				CF89382729CFFF6300B565E2 /* widgetLiveActivity.swift */,
+				CF89382929CFFF6300B565E2 /* widget.swift */,
+				CF89382B29CFFF6300B565E2 /* widget.intentdefinition */,
+				CF89382C29CFFF6600B565E2 /* Assets.xcassets */,
+				CF89382E29CFFF6600B565E2 /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF8937EC29CFFF4400B565E2 /* RetroiTunesStyle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF89381129CFFF4800B565E2 /* Build configuration list for PBXNativeTarget "RetroiTunesStyle" */;
+			buildPhases = (
+				CF8937E929CFFF4400B565E2 /* Sources */,
+				CF8937EA29CFFF4400B565E2 /* Frameworks */,
+				CF8937EB29CFFF4400B565E2 /* Resources */,
+				CF89383729CFFF6600B565E2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF89383229CFFF6600B565E2 /* PBXTargetDependency */,
+			);
+			name = RetroiTunesStyle;
+			productName = RetroiTunesStyle;
+			productReference = CF8937ED29CFFF4400B565E2 /* RetroiTunesStyle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF8937FC29CFFF4800B565E2 /* RetroiTunesStyleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF89381429CFFF4800B565E2 /* Build configuration list for PBXNativeTarget "RetroiTunesStyleTests" */;
+			buildPhases = (
+				CF8937F929CFFF4800B565E2 /* Sources */,
+				CF8937FA29CFFF4800B565E2 /* Frameworks */,
+				CF8937FB29CFFF4800B565E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF8937FF29CFFF4800B565E2 /* PBXTargetDependency */,
+			);
+			name = RetroiTunesStyleTests;
+			productName = RetroiTunesStyleTests;
+			productReference = CF8937FD29CFFF4800B565E2 /* RetroiTunesStyleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF89380629CFFF4800B565E2 /* RetroiTunesStyleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF89381729CFFF4800B565E2 /* Build configuration list for PBXNativeTarget "RetroiTunesStyleUITests" */;
+			buildPhases = (
+				CF89380329CFFF4800B565E2 /* Sources */,
+				CF89380429CFFF4800B565E2 /* Frameworks */,
+				CF89380529CFFF4800B565E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF89380929CFFF4800B565E2 /* PBXTargetDependency */,
+			);
+			name = RetroiTunesStyleUITests;
+			productName = RetroiTunesStyleUITests;
+			productReference = CF89380729CFFF4800B565E2 /* RetroiTunesStyleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CF89381D29CFFF6300B565E2 /* widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF89383429CFFF6600B565E2 /* Build configuration list for PBXNativeTarget "widgetExtension" */;
+			buildPhases = (
+				CF89381A29CFFF6300B565E2 /* Sources */,
+				CF89381B29CFFF6300B565E2 /* Frameworks */,
+				CF89381C29CFFF6300B565E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetExtension;
+			productName = widgetExtension;
+			productReference = CF89381E29CFFF6300B565E2 /* widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF8937E529CFFF4300B565E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CF8937EC29CFFF4400B565E2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CF8937FC29CFFF4800B565E2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CF8937EC29CFFF4400B565E2;
+					};
+					CF89380629CFFF4800B565E2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CF8937EC29CFFF4400B565E2;
+					};
+					CF89381D29CFFF6300B565E2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CF8937E829CFFF4300B565E2 /* Build configuration list for PBXProject "RetroiTunesStyle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF8937E429CFFF4300B565E2;
+			productRefGroup = CF8937EE29CFFF4400B565E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF8937EC29CFFF4400B565E2 /* RetroiTunesStyle */,
+				CF8937FC29CFFF4800B565E2 /* RetroiTunesStyleTests */,
+				CF89380629CFFF4800B565E2 /* RetroiTunesStyleUITests */,
+				CF89381D29CFFF6300B565E2 /* widgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF8937EB29CFFF4400B565E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8937F829CFFF4800B565E2 /* Preview Assets.xcassets in Resources */,
+				CF8937F529CFFF4800B565E2 /* Assets.xcassets in Resources */,
+				CF96614C29E71575003B1F1F /* Baskerville.ttc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8937FB29CFFF4800B565E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF89380529CFFF4800B565E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF89381C29CFFF6300B565E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF96614D29E71576003B1F1F /* Baskerville.ttc in Resources */,
+				CF89382D29CFFF6600B565E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF8937E929CFFF4400B565E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF89383029CFFF6600B565E2 /* widget.intentdefinition in Sources */,
+				CF8937F329CFFF4400B565E2 /* ContentView.swift in Sources */,
+				CF8937F129CFFF4400B565E2 /* RetroiTunesStyleApp.swift in Sources */,
+				CF89383929D001C300B565E2 /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8937F929CFFF4800B565E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF89380229CFFF4800B565E2 /* RetroiTunesStyleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF89380329CFFF4800B565E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF89380C29CFFF4800B565E2 /* RetroiTunesStyleUITests.swift in Sources */,
+				CF89380E29CFFF4800B565E2 /* RetroiTunesStyleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF89381A29CFFF6300B565E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF89382F29CFFF6600B565E2 /* widget.intentdefinition in Sources */,
+				CF89382A29CFFF6300B565E2 /* widget.swift in Sources */,
+				CF89382829CFFF6300B565E2 /* widgetLiveActivity.swift in Sources */,
+				CF89382629CFFF6300B565E2 /* widgetBundle.swift in Sources */,
+				CF89383A29D001F200B565E2 /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF8937FF29CFFF4800B565E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF8937EC29CFFF4400B565E2 /* RetroiTunesStyle */;
+			targetProxy = CF8937FE29CFFF4800B565E2 /* PBXContainerItemProxy */;
+		};
+		CF89380929CFFF4800B565E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF8937EC29CFFF4400B565E2 /* RetroiTunesStyle */;
+			targetProxy = CF89380829CFFF4800B565E2 /* PBXContainerItemProxy */;
+		};
+		CF89383229CFFF6600B565E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF89381D29CFFF6300B565E2 /* widgetExtension */;
+			targetProxy = CF89383129CFFF6600B565E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF89380F29CFFF4800B565E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF89381029CFFF4800B565E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF89381229CFFF4800B565E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroiTunesStyle/Preview Content\"";
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF89381329CFFF4800B565E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroiTunesStyle/Preview Content\"";
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF89381529CFFF4800B565E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroiTunesStyle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroiTunesStyle";
+			};
+			name = Debug;
+		};
+		CF89381629CFFF4800B565E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroiTunesStyle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroiTunesStyle";
+			};
+			name = Release;
+		};
+		CF89381829CFFF4800B565E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroiTunesStyle;
+			};
+			name = Debug;
+		};
+		CF89381929CFFF4800B565E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroiTunesStyle;
+			};
+			name = Release;
+		};
+		CF89383529CFFF6600B565E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyle.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF89383629CFFF6600B565E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVD3L3V6TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heykwarb.RetroiTunesStyle.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF8937E829CFFF4300B565E2 /* Build configuration list for PBXProject "RetroiTunesStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF89380F29CFFF4800B565E2 /* Debug */,
+				CF89381029CFFF4800B565E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF89381129CFFF4800B565E2 /* Build configuration list for PBXNativeTarget "RetroiTunesStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF89381229CFFF4800B565E2 /* Debug */,
+				CF89381329CFFF4800B565E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF89381429CFFF4800B565E2 /* Build configuration list for PBXNativeTarget "RetroiTunesStyleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF89381529CFFF4800B565E2 /* Debug */,
+				CF89381629CFFF4800B565E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF89381729CFFF4800B565E2 /* Build configuration list for PBXNativeTarget "RetroiTunesStyleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF89381829CFFF4800B565E2 /* Debug */,
+				CF89381929CFFF4800B565E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF89383429CFFF6600B565E2 /* Build configuration list for PBXNativeTarget "widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF89383529CFFF6600B565E2 /* Debug */,
+				CF89383629CFFF6600B565E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF8937E529CFFF4300B565E2 /* Project object */;
+}
